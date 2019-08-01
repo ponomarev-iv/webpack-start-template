@@ -1,0 +1,18 @@
+.inp {
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    color: $input-color;
+    display: block;
+    font-size: $fz-base;
+    line-height: $lh-base;
+    transition: all $timeline-base;
+    width: 100%;
+    // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+        border: 0;
+        background-color: transparent;
+    }
+    outline: none;
+    &:focus {
+        border-color: $color-accent;
+    }
+}

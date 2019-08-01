@@ -1,0 +1,28 @@
+$small: 480px;
+$mobile: 767px;
+$tablet: 979px;
+$desktop: 1024px;
+
+@mixin respondTo($media) {
+    @if $media == small {
+        @media only screen and (max-width: $small) { @content; }
+    }
+    @else if $media == small-mobile {
+        @media only screen and (min-width: $small + 1) and (max-width: $mobile - 1) { @content; }
+    }
+    @else if $media == mobile {
+        @media only screen and (max-width: $mobile) { @content; }
+    }
+    @else if $media == mobile-tablet {
+        @media only screen and (min-width: $mobile + 1) and (max-width: $tablet - 1) { @content; }
+    }
+    @else if $media == tablet {
+        @media only screen and (max-width: $tablet) { @content; }
+    }
+    @else if $media == tablet-desktop {
+        @media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) { @content; }
+    }
+    @else if $media == desktop {
+        @media only screen and (max-width: $desktop) { @content; }
+    }
+}

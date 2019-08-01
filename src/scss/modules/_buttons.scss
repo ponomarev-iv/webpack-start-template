@@ -1,0 +1,31 @@
+%btn-reset {
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.btn {
+    @extend %btn-reset;
+
+    text-align: center;
+    touch-action: manipulation;
+    transition: all $timeline-base;
+    user-select:none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    cursor: pointer;
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: default;
+        opacity:.65;
+        box-shadow:none;
+    }
+
+    &.full {
+        width: 100%;
+    }
+}

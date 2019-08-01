@@ -1,0 +1,45 @@
+html {
+    font-size: 1em;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+body {
+    color: $color-text-main;
+    font: #{$fz-base}/#{$lh-base} $font-family-base;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility; //The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+    -webkit-font-smoothing: antialiased; //Make text look good on mac(Tim Van Damme test)
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+a {
+    background: transparent;
+    color: $color-link;
+    text-decoration: $link-hover-decoration;
+    transition: color $timeline-fast;
+    @include hover {
+        color: $color-link-hover;
+    }
+}
+p {
+    color: transparentize($color-text-main, .1);
+    font-weight: 400;
+    line-height: $lh-small;
+    margin: 0;
+}
+small,
+.small {
+    color: $color-text-main;
+    font-size: $fz-small;
+    line-height: $lh-base;
+}
+strong {
+    font-weight: 800;
+}
+b {
+    font-weight: 600;
+}

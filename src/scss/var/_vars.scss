@@ -1,0 +1,31 @@
+// Links
+// =============================================
+$link-hover-decoration: 		none !default;
+
+// Buttons
+// =============================================
+$btn-font-weight:                normal !default;
+
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 $color-accent !default;
+$btn-default-border:             darken($color-accent, 1%) !default;
+
+// Inputs
+// =============================================
+$input-bg:                       #fff !default;
+$input-bg-disabled:              $color-primary !default;
+$input-color:                    $color-primary !default;
+$input-border:                   #ccc !default;
+
+// Animation
+// =============================================
+$timeline-base: 				.4s !default;
+$timeline-fast: 				.2s !default;
+$timeline-slow: 				.8s !default;
+
+// Border
+// =============================================
+$b-s-base: 						 1px;
+$b-s-medium: 					 $b-s-base*3;
+$b-s-big: 					 	 $b-s-medium*2;
+
