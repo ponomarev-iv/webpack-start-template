@@ -69,6 +69,9 @@ const config = {
                       }
                     }
                   ]
+                }),
+                require('autoprefixer')({
+                  grid: true
                 })
               ]
             }
@@ -87,11 +90,19 @@ const config = {
         use: ['pug-loader']
       },
       {
+        enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'eslint-loader',
         options: {
           // formatter: require("./.eslintrc.js")
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
         }
       }
     ]
