@@ -59,4 +59,5 @@ typings/
 
 # build project
 dist/
+.idea
 

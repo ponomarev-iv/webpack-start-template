@@ -1,7 +1,7 @@
 {
-  "name": "static-site-webpack-habr",
+  "name": "start-webapck-template",
   "version": "2.0.0",
-  "description": "HTML template",
+  "description": "Start template for generate css, js and html file",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack --mode development",
